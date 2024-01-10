@@ -6,9 +6,9 @@ import Logo from "../../public/logo.svg";
 
 export default function Hero() {
   return (
-    <main className="container mx-auto flex flex-col justify-center items-center m-5 md:m-24 border-x border-dashed border-gray">
+    <main className="container mx-auto flex flex-col justify-center items-center m-5 md:m-24 border-x border-dashed border-gray border-opacity-30">
       {/* caption on top */}
-      <div className="caption__top__hero flex flex-col-reverse md:flex-row items-center gap-3 border-x border-dashed border-gray px-10 py-5">
+      <div className="caption__top__hero flex flex-col-reverse md:flex-row items-center gap-3 border-x border-dashed border-gray border-opacity-40 px-10 py-5">
         <Chip
           size="sm"
           radius="full"
@@ -29,13 +29,13 @@ export default function Hero() {
         </Button>
       </div>
       {/* title */}
-      <div className="title__hero w-full text-center border-t border-dashed border-gray py-5 px-10">
+      <div className="title__hero w-full text-center border-t border-dashed border-gray border-opacity-40 py-5 px-10">
         <h1 className="text-[40px] md:text-[86px] font-extrabold">
           I’ll Make You Say Wow
         </h1>
       </div>
       {/* caption on bottom */}
-      <div className="title__hero w-full flex justify-center items-center border-t border-dashed border-gray py-5 px-10">
+      <div className="title__hero w-full flex justify-center items-center border-t border-dashed border-gray border-opacity-40 py-5 px-10">
         <p className="text-[16px] md:text-[20px] text-gray text-center lg:max-w-[60%]">
           Introducing, my name is{" "}
           <span className="text-soft-white">Muhammad Iqbal Maulana</span> based
@@ -44,9 +44,9 @@ export default function Hero() {
           <span className="text-soft-white"> Web Development</span>.
         </p>
       </div>
-      <div className="action__hero w-full flex flex-col justify-center items-center text-center gap-5 border-t border-dashed border-gray">
+      <div className="action__hero w-full flex flex-col justify-center items-center text-center gap-5 border-t border-dashed border-gray border-opacity-40">
         {/* call to action */}
-        <div className="action__hero flex flex-col justify-center items-center text-center gap-5 border-x border-dashed border-gray p-10">
+        <div className="action__hero flex flex-col justify-center items-center text-center gap-5 border-x border-dashed border-gray border-opacity-40 p-10">
           <div className="flex flex-row items-center gap-5">
             <Button
               className="flex flex-row items-center gap-1 bg-soft-white"
@@ -64,7 +64,7 @@ export default function Hero() {
             </Button>
           </div>
           <div className="flex flex-row items-center gap-1">
-            <Image src={Logo} width={30} alt="Happy Explore" />
+            <Image src={Logo} width={30} alt="Happy Explore" loading="lazy" />
             <span className="text-[12px] text-gray">Happy Explore</span>
           </div>
         </div>

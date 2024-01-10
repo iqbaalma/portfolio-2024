@@ -13,12 +13,15 @@ export function Navbar() {
       {/* navbar-menu */}
       <NavbarMenuMobile />
       <div className="menu__navbar hidden md:flex flex-row justify-start items-center gap-5 text-gray">
-        <Image
-          src={Logo}
-          alt="Logo"
-          width={80}
-          title="Muhammad Iqbal Maulana"
-        />
+        <Link href="#">
+          <Image
+            src={Logo}
+            alt="Logo"
+            width={80}
+            title="Muhammad Iqbal Maulana"
+            loading="lazy"
+          />
+        </Link>
         <Link
           className="hover:text-soft-gray transition-colors duration-300"
           href="/"

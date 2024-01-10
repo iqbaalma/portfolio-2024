@@ -7,7 +7,7 @@ import { Button } from "@nextui-org/react";
 import { LuAlignJustify, LuArrowUpRight, LuX } from "react-icons/lu";
 import { FaLinkedinIn } from "react-icons/fa";
 import { CSSTransition } from "react-transition-group";
-import "./NavbarMobile.css";
+import "./navbarMobile.css";
 
 export function NavbarMenuMobile() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,12 +20,15 @@ export function NavbarMenuMobile() {
     <>
       {/* navbar-menu */}
       <div className="menu__navbar w-full md:hidden flex flex-row justify-between items-center gap-5 text-gray">
-        <Image
-          src={Logo}
-          alt="Logo"
-          width={80}
-          title="Muhammad Iqbal Maulana"
-        />
+        <Link href="#">
+          <Image
+            src={Logo}
+            alt="Logo"
+            width={80}
+            title="Muhammad Iqbal Maulana"
+            loading="lazy"
+          />
+        </Link>
         <Button
           className="text-soft-white"
           variant="light"
@@ -41,30 +44,31 @@ export function NavbarMenuMobile() {
         classNames="fade-down"
         unmountOnExit
       >
-        <div className="absolute w-full top-20 bg-black min-h-screen flex flex-col justify-start items-start gap-5 pt-5">
+        <div className="absolute w-full top-20 left-0 bg-black min-h-screen flex flex-col justify-start items-start gap-5 pt-5">
+          <span className="w-full border-t border-gray"></span>
           <Link
-            className="hover:text-soft-gray transition-colors duration-300"
+            className="hover:text-soft-gray transition-colors duration-300 ps-3"
             href="/"
           >
             Timeline
           </Link>
           <span className="w-full border-t border-gray"></span>
           <Link
-            className="hover:text-soft-gray transition-colors duration-300"
+            className="hover:text-soft-gray transition-colors duration-300 ps-3"
             href="/showcase"
           >
             Showcase
           </Link>
           <span className="w-full border-t border-gray"></span>
           <Link
-            className="hover:text-soft-gray transition-colors duration-300"
+            className="hover:text-soft-gray transition-colors duration-300 ps-3"
             href="/Experience"
           >
             Experience
           </Link>
           <span className="w-full border-t border-gray"></span>
           <Link
-            className="hover:text-soft-gray transition-colors duration-300"
+            className="hover:text-soft-gray transition-colors duration-300 ps-3"
             href="/Template"
           >
             <span className="flex flex-row items-center">
@@ -73,7 +77,7 @@ export function NavbarMenuMobile() {
             </span>
           </Link>
           <span className="w-full border-t border-gray"></span>
-          <div className="flex flex-row items-center justify-start gap-5 mt-5">
+          <div className="flex flex-row items-center justify-start gap-5 mt-5 ps-3">
             <Button
               radius="sm"
               variant="bordered"

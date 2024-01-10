@@ -1,0 +1,6 @@
+.main__tools {
+  background-image: url("../../../public/resource/tools-background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
