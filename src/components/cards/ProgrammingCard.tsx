@@ -30,7 +30,7 @@ export default function ProgrammingeCards() {
   );
 
   return (
-    <main className="flex flex-col justify-center items-center gap-5">
+    <main className="flex flex-col justify-center items-center gap-5 w-full">
       <Thumbnail />
       {programmingTools.map((item) => (
         <div

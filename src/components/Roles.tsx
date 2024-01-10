@@ -8,8 +8,10 @@ export default function Roles() {
   return (
     <main className="container mx-auto flex flex-col justify-center items-center gap-3 px-3 m-16">
       {/* image */}
-      <Image src={Iconic} width={1000} alt="Roles Muhammad Iqbal Maulana" />
-      <Snowfall />
+      <div className="flex flex-col items-center">
+        <Image src={Iconic} width={1000} alt="Roles Muhammad Iqbal Maulana" />
+        <Snowfall />
+      </div>
 
       {/* say thank you */}
       <Chip

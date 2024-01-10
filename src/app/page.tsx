@@ -1,3 +1,4 @@
+import Footer from "xbal/components/Footer";
 import Hero from "xbal/components/Hero";
 import Lifecycle from "xbal/components/Lifecycle";
 import { Navbar } from "xbal/components/Navbar";
@@ -15,6 +16,7 @@ export default function Home() {
         <Lifecycle />
         <Showcase />
         <Roles />
+        <Footer />
       </main>
     </>
   );

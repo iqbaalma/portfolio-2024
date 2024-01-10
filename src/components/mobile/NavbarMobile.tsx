@@ -19,7 +19,7 @@ export function NavbarMenuMobile() {
   return (
     <>
       {/* navbar-menu */}
-      <div className="menu__navbar w-full md:hidden flex flex-row justify-between items-center gap-5 text-gray">
+      <div className="menu__navbar w-full md:hidden flex flex-row justify-between items-center gap-5 text-gray z-50">
         <Link href="#">
           <Image
             src={Logo}
@@ -44,7 +44,7 @@ export function NavbarMenuMobile() {
         classNames="fade-down"
         unmountOnExit
       >
-        <div className="absolute w-full top-20 left-0 bg-black min-h-screen flex flex-col justify-start items-start gap-5 pt-5">
+        <div className="absolute w-full top-20 left-0 min-h-screen bg-black flex flex-col justify-start items-start gap-5 pt-5">
           <span className="w-full border-t border-gray"></span>
           <Link
             className="hover:text-soft-gray transition-colors duration-300 ps-3"

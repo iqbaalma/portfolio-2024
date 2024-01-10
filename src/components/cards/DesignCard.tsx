@@ -9,7 +9,7 @@ const Thumbnail = () => {
       {/* thumbnail */}
       <div className="thumbnail__design min-h-[400px] px-5 py-8 rounded-xl flex flex-col justify-between items-center border border-gray border-opacity-50 w-full">
         <Image src={ThumbnailDesign} width={250} alt="Thumbnail Design" />
-        <div className="title__programming">
+        <div className="title__design">
           <h2 className="text-left w-full text-[20px] text-soft-white">
             Creative Design
           </h2>
@@ -26,7 +26,7 @@ export default function DesignCards() {
   const designTools = toolsData.filter((data) => data.category === "design");
 
   return (
-    <main className="flex flex-col justify-center items-center gap-5">
+    <main className="flex flex-col justify-center items-center gap-5 w-full">
       <Thumbnail />
       {designTools.map((item) => (
         <div

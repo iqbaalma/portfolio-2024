@@ -17,13 +17,14 @@ const Snowfall: React.FC = () => {
         {
           x: Math.random() * window.innerWidth,
           y: window.innerHeight,
-          opacity: 0.5,
+          opacity: 1, // Set initial opacity to 1
         },
         {
           y: 0,
+          opacity: 0, // Set target opacity to 0
           duration: Math.random() * 3 + 2,
           repeat: -1,
-          ease: "power1.out",
+          ease: 'power1.out',
           onComplete: () => snowflake.remove(),
         }
       );
@@ -37,7 +38,7 @@ const Snowfall: React.FC = () => {
     // Create new snowflake every 0.5 seconds
     const snowfallInterval = setInterval(() => {
       createSnowflake();
-    }, 2000);
+    }, 4000);
 
     // Clean up interval on component unmount
     return () => clearInterval(snowfallInterval);

@@ -9,7 +9,7 @@ import { ButtonActionMobile, NavbarMenuMobile } from "./mobile/NavbarMobile";
 
 export function Navbar() {
   return (
-    <nav className="container mx-auto sticky top-0 z-50 bg-black flex flex-row justify-between items-center py-5 border-b border-gray px-3">
+    <nav className="container mx-auto sticky top-0 z-50 bg-black md:bg-black/50 md:backdrop-blur-md flex flex-row justify-between items-center py-5 border-b border-gray px-3">
       {/* navbar-menu */}
       <NavbarMenuMobile />
       <div className="menu__navbar hidden md:flex flex-row justify-start items-center gap-5 text-gray">
