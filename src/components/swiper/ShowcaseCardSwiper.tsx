@@ -1,8 +1,11 @@
 "use client";
 import React from "react";
-import { Pagination, Navigation } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
 
+// import Swiper core and required modules
+const { Swiper, SwiperSlide } = require("swiper/react");
+const { Navigation } = require("swiper/modules");
+
+// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 
