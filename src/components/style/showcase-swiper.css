@@ -1,0 +1,38 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shadow {
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.swiper-slide .bg-swiper {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  object-fit: cover;
+  object-position: top;
+  max-height: 400px;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}

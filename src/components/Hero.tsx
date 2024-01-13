@@ -3,6 +3,9 @@ import { Button, Chip } from "@nextui-org/react";
 import { LuChevronRight } from "react-icons/lu";
 import Image from "next/image";
 import Logo from "../../public/logo.svg";
+import { Montserrat } from "next/font/google";
+
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function Hero() {
   return (
@@ -30,14 +33,14 @@ export default function Hero() {
       </div>
       {/* title */}
       <div className="title__hero w-full text-center border-t border-dashed border-gray border-opacity-40 py-5 px-10">
-        <h1 className="text-[40px] md:text-[86px] font-extrabold">
+        <h1 className={`text-[42px] md:text-[78px] font-extrabold ${montserrat.className}`}>
           I’ll Make You Say Wow
         </h1>
       </div>
       {/* caption on bottom */}
-      <div className="title__hero w-full flex justify-center items-center border-t border-dashed border-gray border-opacity-40 py-5 px-10">
+      <div className="caption_bottom__hero w-full flex justify-center items-center border-t border-dashed border-gray border-opacity-40 py-5 px-10">
         <p className="text-[16px] md:text-[20px] text-gray text-center lg:max-w-[60%]">
-          Introducing, my name is{" "}
+          Introducing, my name is
           <span className="text-soft-white">Muhammad Iqbal Maulana</span> based
           in Indonesia, and have approximately 2 years of experience in
           <span className="text-soft-white"> Creative Design</span> and

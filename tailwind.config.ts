@@ -18,6 +18,7 @@ const config: Config = {
       colors: {
         black: "#000000",
         "soft-black": "#0A0A0A",
+        "dark-gray": "#444444",
         gray: "#888888",
         "soft-gray": "#A1A1A1",
         white: "#ffffff",

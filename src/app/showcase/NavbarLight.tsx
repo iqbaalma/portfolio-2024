@@ -1,18 +1,21 @@
 import Image from "next/image";
 import React from "react";
-import Logo from "../../public/logo.svg";
+import Logo from "../../../public/logo-black.svg";
 import Link from "next/link";
 import { LuArrowUpRight } from "react-icons/lu";
 import { Button } from "@nextui-org/react";
 import { FaLinkedinIn } from "react-icons/fa";
-import { ButtonActionMobile, NavbarMenuMobile } from "./mobile/NavbarMobile";
+import {
+  ButtonActionMobile,
+  NavbarMenuMobileLight,
+} from "xbal/src/components/mobile/NavbarMobileLight";
 
-export function Navbar() {
+export function NavbarLight() {
   return (
-    <main className="border-b border-dark-gray sticky top-0 z-50">
-      <nav className="container mx-auto bg-black md:bg-black/50 md:backdrop-blur-md flex flex-row justify-between items-center py-5 md:px-0 px-3">
+    <main className="light sticky top-0 z-50 border-b border-soft-gray">
+      <nav className="light container mx-auto  md:bg-white/50 md:backdrop-blur-md flex flex-row justify-between items-center py-5 md:px-0 px-3">
         {/* navbar-menu */}
-        <NavbarMenuMobile />
+        <NavbarMenuMobileLight />
         <div className="menu__navbar hidden md:flex flex-row justify-start items-center gap-5 text-gray">
           <Link href="/">
             <Image
@@ -24,19 +27,19 @@ export function Navbar() {
             />
           </Link>
           <Link
-            className="hover:text-soft-white transition-colors duration-300"
+            className="hover:text-black transition-colors duration-300"
             href="/showcase"
           >
             Showcase
           </Link>
           <Link
-            className="hover:text-soft-white transition-colors duration-300"
+            className="hover:text-black transition-colors duration-300"
             href="/showcase"
           >
             Experience
           </Link>
           <Link
-            className="hover:text-soft-white transition-colors duration-300"
+            className="hover:text-black transition-colors duration-300"
             href="/Template"
           >
             <span className="flex flex-row items-center">
@@ -45,7 +48,7 @@ export function Navbar() {
             </span>
           </Link>
           <Link
-            className="hover:text-soft-white transition-colors duration-300"
+            className="hover:text-black transition-colors duration-300"
             href="/Template"
           >
             <span className="flex flex-row items-center">
@@ -61,14 +64,14 @@ export function Navbar() {
           <Button
             radius="sm"
             variant="bordered"
-            className="text-soft-white border border-soft-white flex flex-row items-center gap-1"
+            className="text-gray border border-soft-gray flex flex-row items-center gap-1"
           >
             <FaLinkedinIn /> Connect
           </Button>
           <Button
             radius="sm"
             variant="solid"
-            className="bg-soft-white flex flex-row items-center"
+            className="bg-soft-black text-soft-white flex flex-row items-center"
           >
             Resume
           </Button>

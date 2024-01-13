@@ -1,14 +1,14 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
-import Logo from "../../../public/logo.svg";
+import Logo from "../../../public/logo-black.svg";
 import Image from "next/image";
 import { Button } from "@nextui-org/react";
 import { LuAlignJustify, LuArrowUpRight, LuX } from "react-icons/lu";
 import { FaLinkedinIn } from "react-icons/fa";
 import { CSSTransition } from "react-transition-group";
 
-export function NavbarMenuMobile() {
+export function NavbarMenuMobileLight() {
   const [isOpen, setIsOpen] = useState(false);
 
   const triggerMenu = () => {
@@ -18,7 +18,7 @@ export function NavbarMenuMobile() {
   return (
     <>
       {/* navbar-menu */}
-      <div className="menu__navbar w-full md:hidden flex flex-row justify-between items-center gap-5 text-gray z-50">
+      <div className="menu__navbar w-full md:hidden flex flex-row justify-between items-center gap-5 text-soft-black z-50">
         <Link href="/">
           <Image
             src={Logo}
@@ -29,7 +29,7 @@ export function NavbarMenuMobile() {
           />
         </Link>
         <Button
-          className="text-soft-white"
+          className="text-soft-black"
           variant="light"
           isIconOnly
           onClick={triggerMenu}
@@ -43,24 +43,24 @@ export function NavbarMenuMobile() {
         classNames="fade-down"
         unmountOnExit
       >
-        <div className="absolute w-full top-20 left-0 min-h-screen bg-black flex flex-col justify-start items-start gap-5 pt-5">
-          <span className="w-full border-t border-dark-gray"></span>
+        <div className="light absolute w-full top-20 left-0 min-h-screen flex flex-col justify-start items-start text-soft-black gap-5 pt-5 overflow-hidden">
+          <span className="w-full border-t border-gray"></span>
           <Link
-            className="hover:text-soft-white transition-colors duration-300 ps-3"
+            className="hover:text-soft-black transition-colors duration-300 ps-3"
             href="/showcase"
           >
             Showcase
           </Link>
-          <span className="w-full border-t border-dark-gray"></span>
+          <span className="w-full border-t border-gray"></span>
           <Link
-            className="hover:text-soft-white transition-colors duration-300 ps-3"
+            className="hover:text-soft-black transition-colors duration-300 ps-3"
             href="/showcase"
           >
             Experience
           </Link>
-          <span className="w-full border-t border-dark-gray"></span>
+          <span className="w-full border-t border-gray"></span>
           <Link
-            className="hover:text-soft-white transition-colors duration-300 ps-3"
+            className="hover:text-soft-black transition-colors duration-300 ps-3"
             href="/Template"
           >
             <span className="flex flex-row items-center">
@@ -68,9 +68,9 @@ export function NavbarMenuMobile() {
               <LuArrowUpRight />
             </span>
           </Link>
-          <span className="w-full border-t border-dark-gray"></span>
+          <span className="w-full border-t border-gray"></span>
           <Link
-            className="hover:text-soft-white transition-colors duration-300 ps-3"
+            className="hover:text-soft-black transition-colors duration-300 ps-3"
             href="/Template"
           >
             <span className="flex flex-row items-center">
@@ -78,19 +78,19 @@ export function NavbarMenuMobile() {
               <LuArrowUpRight />
             </span>
           </Link>
-          <span className="w-full border-t border-dark-gray"></span>
+          <span className="w-full border-t border-gray"></span>
           <div className="flex flex-row items-center justify-start gap-5 mt-5 ps-3">
             <Button
               radius="sm"
               variant="bordered"
-              className="text-soft-white border border-soft-white flex flex-row items-center gap-1"
+              className="text-soft-black border border-soft-gray flex flex-row items-center gap-1"
             >
               <FaLinkedinIn /> Connect
             </Button>
             <Button
               radius="sm"
               variant="solid"
-              className="bg-soft-white flex flex-row items-center"
+              className="bg-soft-black text-soft-white flex flex-row items-center"
             >
               Resume
             </Button>

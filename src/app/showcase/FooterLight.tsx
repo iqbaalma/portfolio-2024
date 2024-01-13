@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import Logo from "../../public/logo.svg";
+import Logo from "xbal/public/logo-black.svg";
 import Link from "next/link";
 
-export default function Footer() {
+export default function FooterLight() {
   return (
-    <footer className="container flex flex-col justify-between items-center border-t py-5 px-3 border-gray border-opacity-30 bg-black w-full z-20 gap-20">
+    <footer className="container mt-20 flex flex-col justify-between items-center border-t py-5 px-3 border-gray border-opacity-30 w-full z-20 gap-20">
       {/* content-top */}
       <div className="flex flex-col md:flex-row justify-center md:justify-between items-center md:items-start gap-10 w-full">
         {/* logo */}
@@ -17,7 +17,7 @@ export default function Footer() {
         <div className="menu__footer flex flex-col md:flex-row justify-end items-center md:items-start gap-10 md:gap-20">
           {/* Resource menu */}
           <div className="resource__menu flex flex-col justify-center md:justify-start items-center md:items-start gap-5 text-[14px]">
-            <span className="text-soft-white font-medium">Resource</span>
+            <span className="text-soft-black font-medium">Resource</span>
             <Link href="/showcase" className="text-gray hover:underline">
               Showcase
             </Link>
@@ -30,7 +30,7 @@ export default function Footer() {
           </div>
           {/* Connection menu */}
           <div className="connection__menu flex flex-col justify-center md:justify-start items-center md:items-start gap-5 text-[14px]">
-            <span className="text-soft-white font-medium">Connection</span>
+            <span className="text-soft-black font-medium">Connection</span>
             <Link
               href="https://github.com/iqbaalma"
               target="_blank"
@@ -62,7 +62,7 @@ export default function Footer() {
           </div>
           {/* Contact menu */}
           <div className="contact__menu flex flex-col justify-center md:justify-start items-center md:items-start gap-5 text-[14px]">
-            <span className="text-soft-white font-medium">Contact</span>
+            <span className="text-soft-black font-medium">Contact</span>
             <Link
               href="https://www.linkedin.com/in/muhammad-iqbal-maulana-82a916214/"
               target="_blank"
@@ -91,7 +91,7 @@ export default function Footer() {
       {/* content-bottom */}
       <div className="flex flex-col-reverse md:flex-row justify-center md:justify-between items-center md:items-start gap-5 w-full text-[14px]">
         {/* copyright */}
-        <span className="text-gray hover:underline">
+        <span className="text-gray">
           2024 &copy; Muhammad Iqbal Maulana&trade;
         </span>
         {/* terms */}
