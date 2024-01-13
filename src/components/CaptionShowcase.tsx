@@ -43,7 +43,6 @@ export default function CaptionShowcase() {
         {badgeSghowcase.map((item: any) => (
           <Chip
             key={item.label}
-            variant="solid"
             className="opacity-70"
             style={{ backgroundColor: item.color, color: item.text }}
           >

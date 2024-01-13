@@ -13,9 +13,7 @@ export default function Hero() {
       {/* caption on top */}
       <div className="caption__top__hero flex flex-col-reverse md:flex-row items-center gap-3 border-x border-dashed border-gray border-opacity-40 px-10 py-5">
         <Chip
-          size="sm"
-          radius="full"
-          className="bg-cyan bg-opacity-50 text-cyan border-2 border-cyan md:block hidden"
+          className="bg-cyan bg-opacity-50 text-cyan border-2 text-[12px] p-0 rounded-full border-cyan md:block hidden"
         >
           New
         </Chip>
