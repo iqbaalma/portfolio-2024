@@ -6,6 +6,8 @@
     "compat-api/css": "off",
     "detect-css-reflows/paint": "off",
     "detect-css-reflows/composite": "off",
-    "no-inline-styles": "off"
+    "no-inline-styles": "off",
+    "typescript-config/consistent-casing": "off",
+    "typescript-config/is-valid": "off"
   }
 }

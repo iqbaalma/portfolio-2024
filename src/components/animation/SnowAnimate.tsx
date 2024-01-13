@@ -1,30 +1,32 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
-import "../style/snowfall.css"
+import "../style/snowfall.css";
 
 const Snowfall: React.FC = () => {
+  const snowflakesContainerRef = useRef<HTMLDivElement | null>(null);
+
   useEffect(() => {
-    const snowflakesContainer = document.getElementById("snowflakes-container");
+    const snowflakesContainer = snowflakesContainerRef.current;
 
     function createSnowflake() {
       const snowflake = document.createElement("div");
       snowflake.className = "snowflake";
-      snowflakesContainer.appendChild(snowflake);
+      snowflakesContainer?.appendChild(snowflake);
 
       gsap.fromTo(
         snowflake,
         {
           x: Math.random() * window.innerWidth,
           y: window.innerHeight,
-          opacity: 1, // Set initial opacity to 1
+          opacity: 1,
         },
         {
           y: 0,
-          opacity: 0, // Set target opacity to 0
+          opacity: 0,
           duration: Math.random() * 3 + 2,
           repeat: -1,
-          ease: 'power1.out',
+          ease: "power1.out",
           onComplete: () => snowflake.remove(),
         }
       );
@@ -44,7 +46,12 @@ const Snowfall: React.FC = () => {
     return () => clearInterval(snowfallInterval);
   }, []);
 
-  return <div id="snowflakes-container" className="snowflakes-container overflow-hidden"></div>;
+  return (
+    <div
+      ref={snowflakesContainerRef}
+      className="snowflakes-container overflow-hidden"
+    ></div>
+  );
 };
 
 export default Snowfall;
