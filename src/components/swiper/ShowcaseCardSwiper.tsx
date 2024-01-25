@@ -23,6 +23,7 @@ import logoDG from "xbal/public/diamond-logo.svg";
 import logoPR from "xbal/public/logo-black.svg";
 import logoUN from "xbal/public/uniicode-logo.svg";
 import logoOT from "xbal/public/others-logo.svg";
+import Link from "next/link";
 
 export default function ShowcaseCardSwiper() {
   return (
@@ -37,7 +38,11 @@ export default function ShowcaseCardSwiper() {
       >
         {/* slider start */}
         <SwiperSlide>
-          <div className="relative border-2 rounded-lg w-full">
+          <Link
+            href="https://drive.google.com/drive/folders/1gckz-3V5Yt2r11oljv3DI5T2IvJvjbNC?usp=sharing"
+            target="_blank"
+            className="relative border border-soft-gray border-opacity-30 rounded-lg w-full"
+          >
             <Image
               src={others}
               alt="Other Background"
@@ -76,12 +81,16 @@ export default function ShowcaseCardSwiper() {
               </div>
             </div>
             {/* content card - end */}
-          </div>
+          </Link>
         </SwiperSlide>
         {/* slider end */}
         {/* slider start */}
         <SwiperSlide>
-          <div className="relative border-2 rounded-lg w-full">
+          <Link
+            href="https://www.linkedin.com/in/muhammad-iqbal-maulana-82a916214/details/projects/"
+            target="_blank"
+            className="relative border border-soft-gray border-opacity-30 rounded-lg w-full"
+          >
             <Image
               src={sidewwways}
               alt="Sidewwways Background"
@@ -118,12 +127,16 @@ export default function ShowcaseCardSwiper() {
               </div>
             </div>
             {/* content card - end */}
-          </div>
+          </Link>
         </SwiperSlide>
         {/* slider end */}
         {/* slider start */}
         <SwiperSlide>
-          <div className="relative border-2 rounded-lg w-full">
+          <Link
+            href="https://diamondgloryhotelschool.com/"
+            target="_blank"
+            className="relative border border-soft-gray border-opacity-30 rounded-lg w-full"
+          >
             <Image
               src={diamond}
               alt="Diamond Background"
@@ -162,12 +175,16 @@ export default function ShowcaseCardSwiper() {
               </div>
             </div>
             {/* content card - end */}
-          </div>
+          </Link>
         </SwiperSlide>
         {/* slider end */}
         {/* slider start */}
         <SwiperSlide>
-          <div className="relative border-2 rounded-lg w-full">
+          <Link
+            href="/"
+            target="_blank"
+            className="relative border border-soft-gray border-opacity-30 rounded-lg w-full"
+          >
             <Image
               src={portfolio}
               alt="Portfolio Background"
@@ -206,12 +223,16 @@ export default function ShowcaseCardSwiper() {
               </div>
             </div>
             {/* content card - end */}
-          </div>
+          </Link>
         </SwiperSlide>
         {/* slider end */}
         {/* slider start */}
         <SwiperSlide>
-          <div className="relative border-2 rounded-lg w-full">
+          <Link
+            href="https://www.figma.com/file/ad8yUkZOYnReUIlrtpsRiL/UNIICODE-UIX?type=design&node-id=0%3A1&mode=design&t=f4yLaHS4nNu3H1IZ-1"
+            target="_blank"
+            className="relative border border-soft-gray border-opacity-30 rounded-lg w-full"
+          >
             <Image
               src={uniicode}
               alt="Uniicode Background"
@@ -250,7 +271,7 @@ export default function ShowcaseCardSwiper() {
               </div>
             </div>
             {/* content card - end */}
-          </div>
+          </Link>
         </SwiperSlide>
         {/* slider end */}
       </Swiper>

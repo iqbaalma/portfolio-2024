@@ -3,16 +3,37 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Logo from "../../../public/logo-black.svg";
 import Image from "next/image";
-import { Button } from "@nextui-org/react";
+import { Badge, Button } from "@nextui-org/react";
 import { LuAlignJustify, LuArrowUpRight, LuX } from "react-icons/lu";
 import { FaLinkedinIn } from "react-icons/fa";
 import { CSSTransition } from "react-transition-group";
+import { useRouter } from "next/navigation";
+import Swal from "sweetalert2";
 
 export function NavbarMenuMobileLight() {
   const [isOpen, setIsOpen] = useState(false);
+  const route = useRouter();
 
   const triggerMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleConnect = () => {
+    route.push("https://www.linkedin.com/in/muhammad-iqbal-maulana-82a916214/");
+  };
+
+  const handleResume = () => {
+    route.push(
+      "https://drive.google.com/file/d/13v2UUlb-7rMhkC3kPxwRcSrAcE_m8aKi/view?usp=sharing"
+    );
+  };
+
+  const handleError = () => {
+    Swal.fire({
+      icon: "error",
+      title: "Sorry, access denied",
+      text: "Page not yet available!",
+    });
   };
 
   return (
@@ -20,13 +41,21 @@ export function NavbarMenuMobileLight() {
       {/* navbar-menu */}
       <div className="menu__navbar w-full md:hidden flex flex-row justify-between items-center gap-5 text-soft-black z-50">
         <Link href="/">
-          <Image
-            src={Logo}
-            alt="Logo"
-            width={80}
-            title="Muhammad Iqbal Maulana"
-            loading="lazy"
-          />
+        <Badge
+              content="BETA"
+              color="primary"
+              shape="circle"
+              size="sm"
+              placement="bottom-right"
+            >
+              <Image
+                src={Logo}
+                alt="Logo"
+                width={80}
+                title="Muhammad Iqbal Maulana"
+                loading="lazy"
+              />
+            </Badge>
         </Link>
         <Button
           className="text-soft-black"
@@ -52,16 +81,16 @@ export function NavbarMenuMobileLight() {
             Showcase
           </Link>
           <span className="w-full border-t border-gray"></span>
-          <Link
-            className="hover:text-soft-black transition-colors duration-300 ps-3"
-            href="/showcase"
+          <span
+            className="hover:text-soft-black transition-colors duration-300 ps-3 cursor-pointer"
+            onClick={handleError}
           >
             Experience
-          </Link>
+          </span>
           <span className="w-full border-t border-gray"></span>
           <Link
             className="hover:text-soft-black transition-colors duration-300 ps-3"
-            href="/Template"
+            href="https://iqbaalna.medium.com/"
           >
             <span className="flex flex-row items-center">
               Blog
@@ -69,21 +98,22 @@ export function NavbarMenuMobileLight() {
             </span>
           </Link>
           <span className="w-full border-t border-gray"></span>
-          <Link
-            className="hover:text-soft-black transition-colors duration-300 ps-3"
-            href="/Template"
+          <span
+            className="hover:text-soft-black transition-colors duration-300 ps-3 cursor-pointer"
+            onClick={handleError}
           >
             <span className="flex flex-row items-center">
               Template
               <LuArrowUpRight />
             </span>
-          </Link>
+          </span>
           <span className="w-full border-t border-gray"></span>
           <div className="flex flex-row items-center justify-start gap-5 mt-5 ps-3">
             <Button
               radius="sm"
               variant="bordered"
               className="text-soft-black border border-soft-gray flex flex-row items-center gap-1"
+              onClick={handleConnect}
             >
               <FaLinkedinIn /> Connect
             </Button>
@@ -91,6 +121,7 @@ export function NavbarMenuMobileLight() {
               radius="sm"
               variant="solid"
               className="bg-soft-black text-soft-white flex flex-row items-center"
+              onClick={handleResume}
             >
               Resume
             </Button>

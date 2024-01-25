@@ -1,9 +1,19 @@
+"use client";
 import Image from "next/image";
 import React from "react";
-import Logo from "../../public/logo.svg";
+import Logo from "xbal/public/logo.svg";
 import Link from "next/link";
+import Swal from "sweetalert2";
 
 export default function Footer() {
+  const handleError = () => {
+    Swal.fire({
+      icon: "error",
+      title: "Sorry, access denied",
+      text: "Page not yet available!",
+    });
+  };
+
   return (
     <footer className="container flex flex-col justify-between items-center border-t py-5 px-3 border-gray border-opacity-30 bg-black w-full z-20 gap-20">
       {/* content-top */}
@@ -21,12 +31,21 @@ export default function Footer() {
             <Link href="/showcase" className="text-gray hover:underline">
               Showcase
             </Link>
-            <Link href="/showcase" className="text-gray hover:underline">
+            <Link href="/experience" className="text-gray hover:underline">
               Experience
             </Link>
-            <Link href="/showcase" className="text-gray hover:underline">
-              Template
+            <Link
+              href="https://iqbaalna.medium.com/"
+              className="text-gray hover:underline"
+            >
+              Blog
             </Link>
+            <span
+              onClick={handleError}
+              className="text-gray hover:underline cursor-pointer"
+            >
+              Template
+            </span>
           </div>
           {/* Connection menu */}
           <div className="connection__menu flex flex-col justify-center md:justify-start items-center md:items-start gap-5 text-[14px]">
@@ -96,13 +115,13 @@ export default function Footer() {
         </span>
         {/* terms */}
         <div className="flex flex-row items-center gap-3 text-gray">
-          <Link href="/error" className="text-gray hover:underline">
+          <span onClick={handleError} className="text-gray hover:underline cursor-pointer">
             Terms
-          </Link>
+          </span>
           <span>|</span>
-          <Link href="/error" className="text-gray hover:underline">
+          <span onClick={handleError} className="text-gray hover:underline cursor-pointer">
             Policy
-          </Link>
+          </span>
         </div>
       </div>
     </footer>

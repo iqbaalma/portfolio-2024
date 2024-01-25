@@ -20,7 +20,7 @@ const dataCardShowcase: CardShowcaseProps[] = [
       "https://github.com/iqbaalma/source-convert-image/assets/104726883/78319a31-950f-4ada-b9dd-932fc9bab2e3",
     title: "Diamond Glory Hotel School",
     tag: "Education",
-    link: "/error",
+    link: "/showcase/diamondglory",
   },
   {
     key: uuidv4(),
@@ -28,7 +28,7 @@ const dataCardShowcase: CardShowcaseProps[] = [
       "https://github.com/iqbaalma/source-convert-image/assets/104726883/72c614ee-d00d-4442-b76a-c5190f9bc6dd",
     title: "Buat Usaha Indonesia",
     tag: "Digital Agency",
-    link: "/error",
+    link: "/showcase/buatusaha",
   },
   {
     key: uuidv4(),
@@ -36,7 +36,7 @@ const dataCardShowcase: CardShowcaseProps[] = [
       "https://github.com/iqbaalma/source-convert-image/assets/104726883/bd4971cf-5b12-4ef9-9969-69d9c99755bd",
     title: "Uniicode Community",
     tag: "Entertainment",
-    link: "/error",
+    link: "/showcase/uniicode",
   },
   {
     key: uuidv4(),
@@ -44,7 +44,7 @@ const dataCardShowcase: CardShowcaseProps[] = [
       "https://github.com/iqbaalma/source-convert-image/assets/104726883/c1bf88bf-2a02-421a-a88e-10fd56c148f0",
     title: "Social Media Design",
     tag: "Design",
-    link: "/error",
+    link: "/showcase/social",
   },
   {
     key: uuidv4(),
@@ -52,7 +52,7 @@ const dataCardShowcase: CardShowcaseProps[] = [
       "https://github.com/iqbaalma/source-convert-image/assets/104726883/0e07de27-c1be-41e7-bb49-d3553ebafae2",
     title: "Sidewwways",
     tag: "Marketplace",
-    link: "/error",
+    link: "/showcase/sidewwways",
   },
   {
     key: uuidv4(),
@@ -60,7 +60,7 @@ const dataCardShowcase: CardShowcaseProps[] = [
       "https://github.com/iqbaalma/source-convert-image/assets/104726883/b5946de7-e0d3-4eb3-bece-fbd67c8dfdff",
     title: "Logo Design",
     tag: "Design",
-    link: "/error",
+    link: "/showcase/logo",
   },
   {
     key: uuidv4(),
@@ -68,7 +68,7 @@ const dataCardShowcase: CardShowcaseProps[] = [
       "https://github.com/iqbaalma/source-convert-image/assets/104726883/e533b0b1-512d-4836-8972-f494894d3627",
     title: "Email Template",
     tag: "Marketing",
-    link: "/error",
+    link: "template",
   },
   {
     key: uuidv4(),
@@ -76,7 +76,7 @@ const dataCardShowcase: CardShowcaseProps[] = [
       "https://github.com/iqbaalma/source-convert-image/assets/104726883/6cd86671-7eb9-4dce-bafc-e647ef0b4154",
     title: "Social & Banner Design",
     tag: "Design",
-    link: "/error",
+    link: "/showcase/social",
   },
 ];
 
@@ -98,7 +98,7 @@ export default function Showcase() {
           <Link
             key={data.key}
             href={data.link}
-            className="bg-[#f8f8f8] p-5 rounded-md flex flex-col justify-center items-center gap-5"
+            className="group/item bg-[#f8f8f8] p-5 rounded-md flex flex-col justify-center items-center gap-5 hover:bg-soft-black transition-colors duration-200"
           >
             {/* content */}
             <div
@@ -111,7 +111,7 @@ export default function Showcase() {
 
             {/* body */}
             <div className="flex flex-col justify-start items-start w-full">
-              <span className="text-[16px] font-semibold text-soft-black flex flex-row items-center justify-start">
+              <span className="text-[16px] font-semibold text-soft-black flex flex-row items-center justify-start group-hover/item:text-soft-white transition-colors duration-200">
                 {data.title}
                 <LuArrowUpRight />
               </span>

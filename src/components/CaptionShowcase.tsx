@@ -1,4 +1,6 @@
+"use client";
 import { Button, Chip } from "@nextui-org/react";
+import { useRouter } from "next/navigation";
 import React from "react";
 import { LuArrowUpRight } from "react-icons/lu";
 
@@ -36,6 +38,12 @@ export default function CaptionShowcase() {
     },
   ];
 
+  const route = useRouter();
+
+  const handleShowcase = () => {
+    route.push("/showcase");
+  };
+
   return (
     <div className="flex flex-col justify-start items-start w-full gap-8 md:ps-20 pt-10 overflow-hidden">
       {/* chip/badge */}
@@ -66,6 +74,7 @@ export default function CaptionShowcase() {
       <Button
         radius="sm"
         variant="solid"
+        onClick={handleShowcase}
         className="bg-soft-white flex flex-row items-center gap-1"
       >
         Go, view Iqbal&apos;s showcase

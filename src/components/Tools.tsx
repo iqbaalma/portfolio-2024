@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import DesignCards from "./cards/DesignCard";
 import ManageCards from "./cards/ManageCard";
@@ -5,14 +6,23 @@ import ProgrammingeCards from "./cards/ProgrammingCard";
 import { Button } from "@nextui-org/react";
 import { LuChevronRight } from "react-icons/lu";
 import "./style/tools.css";
+import { useRouter } from "next/navigation";
 
 export default function Tools() {
+  const route = useRouter();
+
+  const handleExpertise = () => {
+    route.push("/experience");
+  };
+
   return (
     <main className="main__tools w-full">
       <div className="container mx-auto flex flex-col justify-center items-center gap-10 px-3 pb-10">
         {/* title */}
         <div className="title__tools flex flex-col md:flex-row items-center gap-3">
-          <h1 className="text-[32px]">What is used for work?</h1>
+          <h1 id="started-explore" className="text-[32px]">
+            What is used for work?
+          </h1>
           <p className="text-soft-gray text-[20px]">
             I split it into three parts, let&apos;s see
           </p>
@@ -34,6 +44,7 @@ export default function Tools() {
             className="flex flex-row items-center gap-1 text-soft-white"
             variant="bordered"
             radius="full"
+            onClick={handleExpertise}
           >
             OK, Show more <LuChevronRight />
           </Button>

@@ -22,7 +22,7 @@ export default function Roles() {
       </h1>
 
       {/* caption on bottom */}
-      <div className="title__hero w-full flex justify-center items-center border-t border-dashed border-gray border-opacity-40 px-10">
+      <div className="title__hero w-full flex justify-center items-center px-10">
         <p className="text-[16px] md:text-[20px] text-gray text-center lg:max-w-[60%]">
           Introducing, my name is
           <span className="text-soft-white"> Muhammad Iqbal Maulana</span> based

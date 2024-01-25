@@ -10,12 +10,17 @@ import logoDG from "xbal/public/diamond-logo.svg";
 import logoPR from "xbal/public/logo-black.svg";
 import logoUN from "xbal/public/uniicode-logo.svg";
 import logoOT from "xbal/public/others-logo.svg";
+import Link from "next/link";
 
 export const LeftContentCard = () => {
   return (
     <div className="left__content flex flex-col justify-center items-center gap-5">
       {/* card 1 */}
-      <div className="group/item relative border-2 drop-shadow-lg rounded-lg transition-all duration-300 ease-in-out">
+      <Link
+        target="_blank"
+        href="https://drive.google.com/drive/folders/1gckz-3V5Yt2r11oljv3DI5T2IvJvjbNC?usp=sharing"
+        className="group/item relative border border-soft-gray border-opacity-30 rounded-lg"
+      >
         <Image
           src={others}
           alt="Others Background"
@@ -35,7 +40,7 @@ export const LeftContentCard = () => {
               content, and other roles
             </span>
             {/* card inner card */}
-            <div className="group/inner hidden group-hover/item:flex flex-row gap-3 items-center h-auto ">
+            <div className="group/inner hidden group-hover/item:flex flex-row gap-3 items-center h-auto transition-transform duration-300 transform group-hover:transition-all">
               <div className="flex flex-col justify-start items-start border border-soft-gray py-3 px-5 rounded-md">
                 <span className="text-black font-medium text-[16px]">
                   Projects
@@ -54,9 +59,13 @@ export const LeftContentCard = () => {
           </div>
         </div>
         {/* content card - end */}
-      </div>
+      </Link>
       {/* card 2 */}
-      <div className="group/item relative border-2 drop-shadow-lg rounded-lg transition-all duration-300 ease-in-out">
+      <Link
+        target="_blank"
+        href="https://www.linkedin.com/in/muhammad-iqbal-maulana-82a916214/details/projects/"
+        className="group/item relative border border-soft-gray border-opacity-30 rounded-lg"
+      >
         <Image
           src={sidewwways}
           alt="Sidewwways Background"
@@ -93,7 +102,7 @@ export const LeftContentCard = () => {
           </div>
         </div>
         {/* content card - end */}
-      </div>
+      </Link>
     </div>
   );
 };
@@ -102,7 +111,11 @@ export const CenterContentCard = () => {
   return (
     <div className="left__content flex flex-col justify-center items-center gap-5">
       {/* card 1 */}
-      <div className="group/item relative border-2 drop-shadow-lg rounded-lg transition-all duration-300 ease-in-out">
+      <Link
+        target="_blank"
+        href="https://diamondgloryhotelschool.com/"
+        className="group/item relative border border-soft-gray border-opacity-30 rounded-lg"
+      >
         <Image
           src={diamond}
           alt="Diamond Background"
@@ -137,7 +150,7 @@ export const CenterContentCard = () => {
           </div>
         </div>
         {/* content card - end */}
-      </div>
+      </Link>
     </div>
   );
 };
@@ -146,7 +159,11 @@ export const RightContentCard = () => {
   return (
     <div className="left__content flex flex-col justify-center items-center gap-5">
       {/* card 1 */}
-      <div className="group/item relative border-2 drop-shadow-lg rounded-lg transition-all duration-300 ease-in-out">
+      <Link
+        target="_blank"
+        href="/"
+        className="group/item relative border border-soft-gray border-opacity-30 rounded-lg"
+      >
         <Image
           src={portfolio}
           alt="Portfolio Background"
@@ -185,9 +202,13 @@ export const RightContentCard = () => {
           </div>
         </div>
         {/* content card - end */}
-      </div>
+      </Link>
       {/* card 2 */}
-      <div className="group/item relative border-2 drop-shadow-lg rounded-lg transition-all duration-300 ease-in-out">
+      <Link
+        target="_blank"
+        href="https://www.figma.com/file/ad8yUkZOYnReUIlrtpsRiL/UNIICODE-UIX?type=design&node-id=0%3A1&mode=design&t=f4yLaHS4nNu3H1IZ-1"
+        className="group/item relative border border-soft-gray border-opacity-30 rounded-lg"
+      >
         <Image
           src={uniicode}
           alt="Uniicode Background"
@@ -226,7 +247,7 @@ export const RightContentCard = () => {
           </div>
         </div>
         {/* content card - end */}
-      </div>
+      </Link>
     </div>
   );
 };

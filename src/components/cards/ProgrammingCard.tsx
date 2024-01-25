@@ -13,8 +13,8 @@ const Thumbnail = () => {
           width={250}
           alt="Thumnail Programming"
         />
-        <div className="title__programming">
-          <h2 className="w-full text-[20px] text-soft-white">Programming</h2>
+        <div className="title__programming title__design text-left w-full ">
+          <h2 className="text-[20px] text-soft-white">Programming</h2>
           <p className="text-left w-full text-[14px] text-gray">
             Development of web-based digital solutions and applications.
           </p>

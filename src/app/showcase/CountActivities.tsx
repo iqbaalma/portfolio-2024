@@ -4,7 +4,7 @@ import { LuArrowUpRight } from "react-icons/lu";
 
 export default function CountActivities() {
   return (
-    <main className="w-full bg-soft-white py-10 overflow-hidden">
+    <main className="w-full bg-[#f8f8f8] py-10 md:py-20 mt-5 md:mt-20 overflow-hidden">
       <div className="flex flex-col md:flex-row md:justify-center justify-evenly items-center gap-20 sm:gap-40 md:px-0 px-3 text-soft-black">
         {/* left */}
         <div className="flex flex-col justify-center items-center gap-2">
@@ -17,8 +17,9 @@ export default function CountActivities() {
               <p className="text-[20px] font-semibold">Years Experience</p>
             </span>
             <Link
-              href="/error"
-              className="flex flex-row items-center justify-center text-gray"
+              href="/experience"
+              target="_blank"
+              className="flex flex-row items-center justify-center text-gray hover:underline"
             >
               <p className="text-[20px]">Check Here</p>
               <LuArrowUpRight />
@@ -35,8 +36,9 @@ export default function CountActivities() {
               <p className="text-[20px] font-semibold">Cerificate</p>
             </span>
             <Link
-              href="/error"
-              className="flex flex-row items-center justify-center text-gray"
+              href="https://www.linkedin.com/in/muhammad-iqbal-maulana-82a916214/details/experience/"
+              target="_blank"
+              className="flex flex-row items-center justify-center text-gray hover:underline"
             >
               <p className="text-[20px]">on LinkedIn</p>
               <LuArrowUpRight />
@@ -54,8 +56,9 @@ export default function CountActivities() {
               <p className="text-[20px] font-semibold">Repositories</p>
             </span>
             <Link
-              href="/error"
-              className="flex flex-row items-center justify-center text-gray"
+              href="https://github.com/iqbaalma"
+              target="_blank"
+              className="flex flex-row items-center justify-center text-gray hover:underline"
             >
               <p className="text-[20px]">on GitHub</p>
               <LuArrowUpRight />
