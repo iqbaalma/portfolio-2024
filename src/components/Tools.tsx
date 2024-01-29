@@ -12,7 +12,7 @@ export default function Tools() {
   const route = useRouter();
 
   const handleExpertise = () => {
-    route.push("/experience");
+    route.push("/showcase");
   };
 
   return (

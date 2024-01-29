@@ -72,6 +72,7 @@ export function NavbarLight() {
           <Link
             className="hover:text-black transition-colors duration-300"
             href="https://iqbaalna.medium.com/"
+            target="_blank"
           >
             <span className="flex flex-row items-center">
               Blog

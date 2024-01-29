@@ -90,7 +90,8 @@ export function NavbarMenuMobile() {
           <span className="w-full border-t border-dark-gray"></span>
           <Link
             className="hover:text-soft-white transition-colors duration-300 ps-3"
-            href="/https://iqbaalna.medium.com/"
+            href="https://iqbaalna.medium.com/"
+            target="_blank"
           >
             <span className="flex flex-row items-center">
               Blog

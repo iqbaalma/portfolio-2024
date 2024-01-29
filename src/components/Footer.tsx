@@ -1,11 +1,17 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "xbal/public/logo.svg";
 import Link from "next/link";
 import Swal from "sweetalert2";
 
 export default function Footer() {
+  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
+
   const handleError = () => {
     Swal.fire({
       icon: "error",
@@ -111,15 +117,21 @@ export default function Footer() {
       <div className="flex flex-col-reverse md:flex-row justify-center md:justify-between items-center md:items-start gap-5 w-full text-[14px]">
         {/* copyright */}
         <span className="text-gray hover:underline">
-          2024 &copy; Muhammad Iqbal Maulana&trade;
+          {currentYear} &copy; Muhammad Iqbal Maulana&trade;
         </span>
         {/* terms */}
         <div className="flex flex-row items-center gap-3 text-gray">
-          <span onClick={handleError} className="text-gray hover:underline cursor-pointer">
+          <span
+            onClick={handleError}
+            className="text-gray hover:underline cursor-pointer"
+          >
             Terms
           </span>
           <span>|</span>
-          <span onClick={handleError} className="text-gray hover:underline cursor-pointer">
+          <span
+            onClick={handleError}
+            className="text-gray hover:underline cursor-pointer"
+          >
             Policy
           </span>
         </div>

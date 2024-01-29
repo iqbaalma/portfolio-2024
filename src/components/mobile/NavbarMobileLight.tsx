@@ -91,6 +91,7 @@ export function NavbarMenuMobileLight() {
           <Link
             className="hover:text-soft-black transition-colors duration-300 ps-3"
             href="https://iqbaalna.medium.com/"
+            target="_blank"
           >
             <span className="flex flex-row items-center">
               Blog
