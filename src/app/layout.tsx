@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     icon: ["/favicon.ico?v=4"],
     apple: ["/favicon.ico?v=4"],
     shortcut: ["/favicon.ico?v=4"],
-  },
+  }
 };
 
 export default function RootLayout({
