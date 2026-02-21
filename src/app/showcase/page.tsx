@@ -1,4 +1,3 @@
-import React from "react";
 import { NavbarLight } from "./NavbarLight";
 import HeroShowcase from "./HeroShowcase";
 import TopShowcase from "./TopShowcase";

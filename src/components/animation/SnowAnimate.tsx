@@ -25,10 +25,10 @@ const Snowfall: React.FC = () => {
           y: 0,
           opacity: 0,
           duration: Math.random() * 3 + 2,
-          repeat: -1,
+          repeat: -4,
           ease: "power1.out",
           onComplete: () => snowflake.remove(),
-        }
+        },
       );
     }
 

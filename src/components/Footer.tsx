@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import Logo from "xbal/public/logo.svg";
+import Logo from "../../public/logo.svg";
 import Link from "next/link";
 import Swal from "sweetalert2";
 
@@ -77,13 +77,6 @@ export default function Footer() {
             >
               Dribbble
             </Link>
-            <Link
-              href="https://www.fiverr.com/iqbaalna"
-              target="_blank"
-              className="text-gray hover:underline"
-            >
-              Fiverr
-            </Link>
           </div>
           {/* Contact menu */}
           <div className="contact__menu flex flex-col justify-center md:justify-start items-center md:items-start gap-5 text-[14px]">
@@ -103,11 +96,11 @@ export default function Footer() {
               Email
             </Link>
             <Link
-              href="https://api.whatsapp.com/send?phone=6285712248041&text=I%20have%20an%20offer%20to%20hire%20you%20with%20a%20project%20like..."
+              href="https://api.whatsapp.com/send?phone=6285117350094&text=I%20have%20an%20offer%20to%20hire%20you%20with%20a%20project%20like..."
               target="_blank"
               className="text-gray hover:underline"
             >
-              WhatsApp Business
+              WhatsApp
             </Link>
           </div>
         </div>

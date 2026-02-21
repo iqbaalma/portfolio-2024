@@ -1,10 +1,9 @@
 "use client";
 import Image from "next/image";
-import React from "react";
 import Logo from "../../public/logo.svg";
 import Link from "next/link";
 import { LuArrowUpRight } from "react-icons/lu";
-import { Badge, Button } from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
 import { FaLinkedinIn } from "react-icons/fa";
 import { ButtonActionMobile, NavbarMenuMobile } from "./mobile/NavbarMobile";
 import { useRouter } from "next/navigation";
@@ -19,7 +18,7 @@ export function Navbar() {
 
   const handleResume = () => {
     route.push(
-      "https://drive.google.com/file/d/13v2UUlb-7rMhkC3kPxwRcSrAcE_m8aKi/view?usp=sharing"
+      "https://drive.google.com/file/d/1KyfaONrgUbkN7Qc6QB6Waax7upIzEW0i/view?usp=sharing",
     );
   };
 
@@ -38,21 +37,13 @@ export function Navbar() {
         <NavbarMenuMobile />
         <div className="menu__navbar hidden md:flex flex-row justify-start items-center gap-5 text-gray">
           <Link href="/">
-          <Badge
-              content="BETA"
-              color="primary"
-              shape="circle"
-              size="sm"
-              placement="bottom-right"
-            >
-              <Image
-                src={Logo}
-                alt="Logo"
-                width={80}
-                title="Muhammad Iqbal Maulana"
-                loading="lazy"
-              />
-            </Badge>
+            <Image
+              src={Logo}
+              alt="Logo"
+              width={80}
+              title="Muhammad Iqbal Maulana"
+              loading="lazy"
+            />
           </Link>
           <Link
             className="hover:text-soft-white transition-colors duration-300"

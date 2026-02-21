@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import React from "react";
 import Logo from "xbal/public/logo-black.svg";
 import Link from "next/link";
 import Swal from "sweetalert2";

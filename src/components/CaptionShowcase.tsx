@@ -1,7 +1,6 @@
 "use client";
 import { Button, Chip } from "@nextui-org/react";
 import { useRouter } from "next/navigation";
-import React from "react";
 import { LuArrowUpRight } from "react-icons/lu";
 
 export default function CaptionShowcase() {

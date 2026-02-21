@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 import { LuArrowUpRight } from "react-icons/lu";
 
 export default function CountActivities() {

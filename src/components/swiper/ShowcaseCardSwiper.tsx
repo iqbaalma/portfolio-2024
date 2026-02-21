@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 
 // import Swiper core and required modules
 const { Swiper, SwiperSlide } = require("swiper/react");
@@ -12,17 +11,17 @@ import "swiper/css/navigation";
 import "../style/showcase-swiper.css";
 
 // Import your images and logos here
-import others from "xbal/public/resource/others-image.png";
-import sidewwways from "xbal/public/resource/sidewwways-background.png";
-import diamond from "xbal/public/resource/diamond-background.png";
-import portfolio from "xbal/public/resource/portfolio-background.png";
-import uniicode from "xbal/public/resource/uniicode-background.png";
+import others from "../../../public/resource/others-image.png";
+import sidewwways from "../../../public/resource/sidewwways-background.png";
+import diamond from "../../../public/resource/diamond-background.png";
+import portfolio from "../../../public/resource/portfolio-background.png";
+import uniicode from "../../../public/resource/uniicode-background.png";
 import Image from "next/image";
-import logoSW from "xbal/public/sidewwways-logo.svg";
-import logoDG from "xbal/public/diamond-logo.svg";
-import logoPR from "xbal/public/logo-black.svg";
-import logoUN from "xbal/public/uniicode-logo.svg";
-import logoOT from "xbal/public/others-logo.svg";
+import logoSW from "../../../public/sidewwways-logo.svg";
+import logoDG from "../../../public/diamond-logo.svg";
+import logoPR from "../../../public/logo-black.svg";
+import logoUN from "../../../public/uniicode-logo.svg";
+import logoOT from "../../../public/others-logo.svg";
 import Link from "next/link";
 
 export default function ShowcaseCardSwiper() {

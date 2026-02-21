@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import DesignCards from "./cards/DesignCard";
 import ManageCards from "./cards/ManageCard";
 import ProgrammingeCards from "./cards/ProgrammingCard";

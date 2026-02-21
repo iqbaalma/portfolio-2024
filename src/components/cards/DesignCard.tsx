@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import ThumbnailDesign from "../../../public/resource/design.svg";
 import { toolsData } from "../utils/data-tools";
 

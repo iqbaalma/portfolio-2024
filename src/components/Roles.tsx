@@ -1,5 +1,5 @@
+"use client";
 import Image from "next/image";
-import React from "react";
 import Iconic from "../../public/resource/glow-roles-background.svg";
 import { Chip } from "@nextui-org/react";
 import Snowfall from "./animation/SnowAnimate";

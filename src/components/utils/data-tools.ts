@@ -36,7 +36,7 @@ export const toolsData: ToolsDataType[] = [
   },
   {
     id: uuidv4(),
-    name: "FigJam",
+    name: "Notion",
     desc: "To create a flow with a team board and template board that can be set up together.",
     category: "manage",
   },
@@ -61,7 +61,7 @@ export const toolsData: ToolsDataType[] = [
   },
   {
     id: uuidv4(),
-    name: "MongoDB",
+    name: "Firebase",
     desc: "Data platform provides a tightly integrated collection of data.",
     category: "programming",
   },

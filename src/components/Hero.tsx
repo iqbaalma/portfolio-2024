@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { Button, Chip } from "@nextui-org/react";
 import { LuChevronRight } from "react-icons/lu";
 import Image from "next/image";
@@ -22,7 +21,7 @@ export default function Hero() {
 
   const handleResume = () => {
     route.push(
-      "https://drive.google.com/file/d/13v2UUlb-7rMhkC3kPxwRcSrAcE_m8aKi/view?usp=sharing"
+      "https://drive.google.com/file/d/1KyfaONrgUbkN7Qc6QB6Waax7upIzEW0i/view?usp=sharing",
     );
   };
 
@@ -57,13 +56,14 @@ export default function Hero() {
       {/* caption on bottom */}
       <div className="caption_bottom__hero w-full flex justify-center items-center border-t border-dashed border-gray border-opacity-40 py-5 px-10">
         <p
-          className={`text-[16px] md:text-[20px] text-gray text-center lg:max-w-[70%] ${montserrat.className}`}
+          className={`text-[16px] md:text-[20px] text-gray text-center lg:max-w-full ${montserrat.className}`}
         >
           Introducing, my name is
           <span className="text-soft-white"> Muhammad Iqbal Maulana</span> based
-          in Indonesia, and have approximately 2 years of experience in
-          <span className="text-soft-white"> Creative Design</span> and
-          <span className="text-soft-white"> Web Development</span>.
+          in Indonesia, I have more than 4+ years of experience in the creative
+          and marketing fields. Personally, I am very enthusiastic about new
+          things that can broaden my knowledge and skills in any field. I am
+          also very active and like to incorporate ideas into my work.
         </p>
       </div>
       <div className="action__hero w-full flex flex-col justify-center items-center text-center gap-5 border-t border-dashed border-gray border-opacity-40">

@@ -1,7 +1,7 @@
 "use client";
 import { Button, button } from "@nextui-org/react";
 import Link from "next/link";
-import React, { useState } from "react";
+import { useState } from "react";
 import { LuArrowUpRight } from "react-icons/lu";
 import { v4 as uuidv4 } from "uuid";
 

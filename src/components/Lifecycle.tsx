@@ -1,4 +1,3 @@
-import React from "react";
 import "./style/lifecycle.css";
 import Image from "next/image";
 import Diagram from "../../public/resource/lifecycle-diagram.svg";

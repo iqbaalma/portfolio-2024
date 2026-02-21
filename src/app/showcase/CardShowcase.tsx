@@ -1,4 +1,3 @@
-import React from "react";
 import Showcase from "xbal/src/components/cards/Showcase";
 
 export default function CardShowcase() {

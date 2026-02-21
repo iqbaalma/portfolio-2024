@@ -1,4 +1,3 @@
-import React from "react";
 import others from "xbal/public/resource/others-image.png";
 import sidewwways from "xbal/public/resource/sidewwways-background.png";
 import diamond from "xbal/public/resource/diamond-background.png";

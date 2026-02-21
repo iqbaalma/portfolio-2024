@@ -1,9 +1,9 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Logo from "../../../public/logo.svg";
 import Image from "next/image";
-import { Badge, Button } from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
 import { LuAlignJustify, LuArrowUpRight, LuX } from "react-icons/lu";
 import { FaLinkedinIn } from "react-icons/fa";
 import { CSSTransition } from "react-transition-group";
@@ -12,6 +12,7 @@ import Swal from "sweetalert2";
 
 export function NavbarMenuMobile() {
   const [isOpen, setIsOpen] = useState(false);
+  const nodeRef = useRef(null);
   const route = useRouter();
 
   const triggerMenu = () => {
@@ -24,7 +25,7 @@ export function NavbarMenuMobile() {
 
   const handleResume = () => {
     route.push(
-      "https://drive.google.com/file/d/13v2UUlb-7rMhkC3kPxwRcSrAcE_m8aKi/view?usp=sharing"
+      "https://drive.google.com/file/d/1KyfaONrgUbkN7Qc6QB6Waax7upIzEW0i/view?usp=sharing",
     );
   };
 
@@ -41,21 +42,13 @@ export function NavbarMenuMobile() {
       {/* navbar-menu */}
       <div className="menu__navbar w-full md:hidden flex flex-row justify-between items-center gap-5 text-gray z-50">
         <Link href="/">
-        <Badge
-              content="BETA"
-              color="primary"
-              shape="circle"
-              size="sm"
-              placement="bottom-right"
-            >
-              <Image
-                src={Logo}
-                alt="Logo"
-                width={80}
-                title="Muhammad Iqbal Maulana"
-                loading="lazy"
-              />
-            </Badge>
+          <Image
+            src={Logo}
+            alt="Logo"
+            width={80}
+            title="Muhammad Iqbal Maulana"
+            loading="lazy"
+          />
         </Link>
         <Button
           className="text-soft-white"
@@ -67,12 +60,16 @@ export function NavbarMenuMobile() {
         </Button>
       </div>
       <CSSTransition
+        nodeRef={nodeRef}
         in={isOpen}
         timeout={300}
         classNames="fade-down"
         unmountOnExit
       >
-        <div className="absolute w-full top-20 left-0 min-h-screen bg-black flex flex-col justify-start items-start gap-5 pt-5">
+        <div
+          ref={nodeRef}
+          className="absolute w-full top-20 left-0 min-h-screen bg-black flex flex-col justify-start items-start gap-5 pt-5"
+        >
           <span className="w-full border-t border-dark-gray"></span>
           <Link
             className="hover:text-soft-white transition-colors duration-300 ps-3"
